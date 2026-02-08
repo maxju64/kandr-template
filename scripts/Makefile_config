@@ -1,0 +1,22 @@
+CC = gcc
+CFLAGS = -g
+LDFLAGS = -lm
+#Put $(LDFLAGS) after example.o in the build/example target if you are using math.h
+
+build/example: build/main.o build/example.o
+	$(CC) build/main.o build/example.o $(LDFLAGS) -o build/example
+
+build/example.o: src/example.c
+	$(CC) $(CFLAGS) -c src/example.c -o build/example.o
+
+build/main.o: src/main.c
+	$(CC) $(CFLAGS) -c src/main.c -o build/main.o
+
+.PHONY: run
+run:
+	build/./example
+
+.PHONY: clean
+clean:
+	rm build/*.o
+	rm build/example
