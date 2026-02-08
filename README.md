@@ -20,7 +20,7 @@ git commit -m "Your commit message"
 ```
 
 ## Typical Project Layout
-
+```bash
 .
 ├── build
 │   ├── main.o
@@ -31,7 +31,7 @@ git commit -m "Your commit message"
     ├── main.c
     ├── project.c
     └── project.h
-
+```
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
