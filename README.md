@@ -15,6 +15,8 @@ cd Chapter\ 1
 ../scripts/dir.sh 1 my_binary
 cd my_binary
 make #verify that you can build the project.
+git add .
+git commit -m "Your commit message"
 ```
 
 ## Typical Project Layout
